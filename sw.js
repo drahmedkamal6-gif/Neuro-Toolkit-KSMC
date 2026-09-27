@@ -1,7 +1,9 @@
-// KSMC Neurology Clinical Tools — Service Worker
+// Neurology Clinical Tools — Service Worker
 // Bump CACHE_VERSION whenever index.html (or any precached file) changes,
 // so returning users get the update instead of a stale cached copy.
-const CACHE_VERSION = 'v1';
+// Versioning: v4.1, v4.2, v4.3, ... — each update increments the number
+// after the decimal point; the major "v4" stays fixed going forward.
+const CACHE_VERSION = 'v4.1';
 const CACHE_NAME = 'ksmc-neuro-tools-' + CACHE_VERSION;
 
 const PRECACHE_URLS = [
